@@ -6,14 +6,19 @@
     </head>
     <body>
 <style>
-  td:nth-child(even)
+  tr:first-child td, tr:last-child td,
+    td:first-child, td:last-child {
+      background-color: green !important;
+      width: 25px !important;
+      height: 25px !important;
+    }
+  tr:nth-child(even) td:nth-child(odd),
+  tr:nth-child(odd) td:nth-child(even) 
   {
-    background-color:black
+  background-color: black
   }
-  tr:nth-child(even)
-  {
-    background-color:white
-  }
+ 
+
   table.CHESS
   {
     border-collapse: collapse;
