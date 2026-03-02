@@ -6,9 +6,19 @@
     </head>
      <body>
         <style>
-            .DOG {background: url('https://fe.it-academy.by/Sites/0046593/star0.png'); width: 75px; height: 78px; float:left}
-            .DOG:hover {background: url('https://fe.it-academy.by/Sites/0046593/star1.png'); width: 76px; height: 78px; float:left}
+            .star-container {float:left}
+            .star{background-image: url('https://fe.it-academy.by/Sites/0046593/star0.png');width: 75px;height: 78px;float:left}
+            .star-container:hover .star{background-image: url('https://fe.it-academy.by/Sites/0046593/star1.png');width: 75px;height: 78px}
+            .star-container .star:hover ~ .star{background-image: url('https://fe.it-academy.by/Sites/0046593/star0.png');width: 75px;height: 78px}
         </style>
-        <div class='DOG'></div><div class='DOG'></div><div class='DOG'></div><div class='DOG'></div><div class='DOG'></div><div class='DOG'></div>
+        <div class='star-container'>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
      </body>
-</html>
+    </html>
