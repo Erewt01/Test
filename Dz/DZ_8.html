@@ -6,29 +6,32 @@
     </head>
 <body>
     <style>
-        
+       @media only all and (min-width: 35em){/*ШИРОКИЙ*/
+       .pole{margin-left: 15em;}
+       .schirina{float: left; width: 15em;} 
     </style>
     <form method=post action="http://fe.it-academy.by/TestForm.php">
     <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
-        <div>Название статьи:
-            <input type="text" name="fam"></div>
-        
-        <div>Рубрика:
-         <select name='animalkind'>
+          
+    <div class="schirina">Название статьи:</div>
+            <div class="pole"><input style="width:100%" type="text" name="fam">
+        </div>
+       <div class="schirina">Рубрика:</div>
+         <div class="pole"><select name='animalkind'>
         <option value=1>компьютерная техника</option>
         <option value=2>графика и дизайн</option>
         <option value=3 selected>программирование</option>
         </select></div>
-        <div>Публикация:
-            <input type='radio' name='answer' value=1>на сайте
+       <div class="schirina">Публикация:</div>
+            <div class="pole"><input type='radio' name='answer' value=1>на сайте
     <input type='radio' name='answer' value=2>в журнале
     <input type='radio' name='answer' value=3>на сайте и журнале
     <input type='hidden' name='votenum' value='111'></div>
-        <div>Разрешить комментарии:
-        <input type="checkbox" name="onlynew" checked></div>
+        <div class="schirina">Разрешить комментарии:</div>
+        <div class="pole"><input type="checkbox" name="onlynew" checked></div>
         Текст статьи:
-        <div><textarea name='mytext'></textarea></div>
-    <input type="submit" value="Опубликовать">
+       <div class="text"><textarea style="width:100%" name='mytext'></textarea></div>
+    <div><input  type="submit" value="Опубликовать"></div>
     </form>
 </body>
 </html>
