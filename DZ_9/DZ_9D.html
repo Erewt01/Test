@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Домашняя работа 9Д</title>
+    </head>
+    <body>
+        <style>
+            @keyframes MyAnimation1
+            {
+                from {background-color: red; color:blue}
+                50%{background-color:white; color:green}
+                to{background-color: yellow; color: black;}
+            }
+            .d1
+            {
+                width: 400px;
+                color:white;
+                padding:10px;
+                margin:20px;
+                text-align: center;
+                font-size: center;
+                animation: MyAnimation1 5s infinite
+            }
+            @keyframes MyAnimation2
+            {
+                from{border-radius: 0%;}
+                to{border-radius: 50%;}
+            }
+            .d2:hover
+            {
+                width: 259px;
+                height: 194px;
+                
+            }
+            @keyframes MyAnimation3
+            {
+                from{background:url('https://fe.it-academy.by/Sites/0046510/1.jpg')0 0;}
+                to{background:url('https://fe.it-academy.by/Sites/0046510/1.jpg')-576px 0}
+            }
+            .d3
+            {
+                width: 48px;
+                height: 98px;
+                background:url('https://fe.it-academy.by/Sites/0046510/1.jpg')
+            }
+            .d0
+            {
+                width: 500px;
+                height: 400px;
+            }
+            .d0:hover 
+            {
+                .d2{animation:MyAnimation2 2s infinite alternate ;}
+                .d3{animation: MyAnimation3 1s steps(12) infinite}
+            }
+        </style>
+        <div class="d0">
+            <div class="d1">Первый постоянный вид анимации</div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-pwOU_gNijh0cYG4scWPc20eEUzdcADWHXA&s"class="d2"></div>
+            <div class="d3"></div>
+        </div>
+    </body>
+</html>
