@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript код</title>
+    </head>
+    <body>
+       <script>
+    var helloMsg='Ваше ФИО:';
+    var Familia=prompt('Введите Фамилию:');
+    var name=prompt('Введите Имя:');
+    var Otchestvo=prompt('Введите Отчество:');
+    var Wozrast='Ваш возраст в годах:';
+    var Wozrasttext=prompt('Укажите сколько вам лет');
+    var Wozrastchislo=parseInt(Wozrasttext);
+    var DNI='Ваш возраст в днях:';
+    var DNI1=Wozrastchislo*365;
+    var Goda='Через 5 лет вам будет:';
+    var God=Wozrastchislo+5;
+    var POL=confirm('Укажите ваш пол? Нажмите ОКЕЙ, если мужской и ОТМЕНА, если женский');
+    var PolText = POL? 'мужской' : 'женский';
+    var Pensia = (POL && Wozrastchislo >= 60) || (!POL && Wozrastchislo >= 55)? 'да' : 'нет'
+    
+    alert( helloMsg + ' ' + Familia + ' ' + name +' ' + Otchestvo + '\n' + Wozrast + ' ' + Wozrastchislo + '\n' + DNI + DNI1 + '\n' + Goda + God + '\n' + 'Ваш пол:' + PolText + '\n' + 'Вы на пенсии:' + Pensia);
+</script>
+    </body>
+</html>
