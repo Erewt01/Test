@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Домашняя работа</title>
+    </head>
+    <body>
+        
+        <script src='Countries.js'></script>
+        <script>
+            var countrysH={'Германия':'Берлин', 'Венгрия':'Будапешт', 'Франция':'Париж'};
+            function useraddCountry(){
+                var countryName=prompt('Введите название страны');
+                var capitalName=prompt('Введите название столицы');
+                addCountry(countryName,capitalName)
+            }
+            function osergetCountryInfo(){
+                var countryName=prompt('Введите название страны')
+                getCountryInfo(countryName)
+            }
+            function deldeleteCountry(){
+                var countryName=prompt('Введите название страны')
+                 delete countrysH[countryName]; 
+            }
+            
+
+             
+</script>
+<input type='button' value='Ввод информации о стране' onclick='useraddCountry()'>
+<br>
+<input type='button' value='Получение информации о стране' onclick='osergetCountryInfo()'>
+<br>
+<input type='button' value='Перечень всех стран' onclick='listCountrys()'>
+<br>
+<input type='button' value='Удаление информации о стране' onclick='deldeleteCountry()'>
+    </body>
+</html>
